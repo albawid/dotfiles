@@ -1,0 +1,3 @@
+#!/bin/sh
+feh  --bg-fill '/mnt/sda4/Gambar/wp/green-plants.jpg'
+#feh  --bg-fill '/mnt/sda4/Gambar/wp/palenight.jpg'

@@ -1,0 +1,8 @@
+**/*.db
+**/*.dat
+**/*.log
+**/*.pid
+**/__pycache__/*
+**/api.json
+**/qsettings
+qutebrowser/.config/qutebrowser/autoconfig.yml

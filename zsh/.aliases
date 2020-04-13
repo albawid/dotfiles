@@ -1,0 +1,11 @@
+#!/bin/sh
+
+###################
+# Aliases Command #
+###################
+alias jam='tty-clock -s -c -C 7 -r -f "%A, %d %B %Y"'
+alias youtube-download="youtube-dl -f 'bestvideo[ext=webm]+bestaudio[ext=webm]/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best'"
+alias vi3='nvim ~/.config/i3/config'
+alias nf='neofetch --ascii ~/.config/neofetch/ascii/arch'
+alias repo='sudo nvim /etc/pacman.d/mirrorlist'
+alias su='sudo su'

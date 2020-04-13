@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Numixoceanicnext
+Comment=A themable modern flat theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Numixoceanicnext
+IconTheme=Numix
+MetacityTheme=Numixoceanicnext
+ButtonLayout=:minimize,maximize,close

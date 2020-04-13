@@ -1,0 +1,55 @@
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/ncmpcpp/lyrics
+
+#mpd_connection_timeout = 5
+mpd_music_dir = /mnt/sda4/musik
+mpd_crossfade_time = 2
+
+mpd_host = localhost
+mpd_port = 6601
+
+#
+## Look & Feel ##
+#
+[visualizer]
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_in_stereo = "no"
+visualizer_type = "spectrum"
+visualizer_output_name = "my_fifo"
+visualizer_look = "●┃"
+visualizer_color = "default"
+
+[header]
+header_visibility = "no"
+header_window_color = "default"
+volume_color = "default"
+state_line_color = "black"
+
+[playlist]
+playlist_display_mode = "classic"
+# song_list_format = "{{%a} - {%t}}{$R%l}"
+song_list_format = "{$8%a - }{%t}$R{%l}"
+# song_list_format = "{{%f}}{{$R%l}}"
+now_playing_prefix = "$b$4"
+now_playing_suffix = "$/b$9"
+selected_item_prefix = "▶ "
+
+[statusbar]
+progressbar_look = "─╼ "
+progressbar_color = "magenta"
+statusbar_visibility = "no"
+statusbar_color = "default"
+song_status_format = "{{%a{ - %t}}|{ - %f}{ - %b{ (%y)}}}"
+
+[library]
+song_library_format = "{{%a - %t}|{%f}}{$R%l}"
+empty_tag_color = "black"
+
+[global]
+colors_enabled = "yes"
+main_window_color = "default"
+centered_cursor = "yes"
+enable_window_title = "yes"
+external_editor = "nvim"
+browser_sort_mode = "name"
+# execute_on_song_change = "dunstify 'Playing :' '$(mpc current)'"
