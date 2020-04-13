@@ -27,15 +27,15 @@ Sedikit rincian OS yang saya gunakan
 
 | Nama		| Deskripsi												|
 | :------------	| :---------------------------------------------------------------------------------------------------- |
-| OS		| [Manjaro i3](https://manjaro.org/download/community/i3/)						|
+| OS		| [Arch Linux](https://www.archlinux.org/download/)						|
 | WM		| [i3](https://i3wm.org/)										|
 | Shell		| [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)						|
 | DM		| [Lightdm](https://github.com/canonical/lightdm)							|
 | Font		| [Iosevka Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)	|
-| Terminal	| [St](https://st.suckless.org/), [Urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)		|
+| Terminal	| [St](https://st.suckless.org/), [xterm](https://wiki.archlinux.org/index.php/Xterm)			|
 | Bar		| [Polybar](https://github.com/polybar/polybar)								|
 | Launcher	| [Rofi](https://github.com/davatorium/rofi),[Jgmenu](https://github.com/johanmalm/jgmenu)		|
-| Text Editor	| [Neovim](https://neovim.io/)										|
+| Text Editor	| [Neovim](https://github.com/neovim/neovim)										|
 
 ## Tangkapan Layar
 
