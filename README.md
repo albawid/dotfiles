@@ -1,12 +1,12 @@
 <p align="center">
-<a href="https://github.com/albawid/dotfilesnew/blob/master/screenshoot/header.png"><img src="https://github.com/albawid/dotfilesnew/blob/master/screenshoot/header.png"></a>
+<a href="https://github.com/albawid/dotfiles/blob/master/screenshoot/header.png"><img src="https://github.com/albawid/dotfiles/blob/master/screenshoot/header.png"></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/albawid" target="_blank"><img alt="undefined" src="https://img.shields.io/github/repo-size/albawid/dotfilesnew?label=Dotfiles%20Size&style=for-the-badge&logo=github"></a>
-<a href="https://github.com/albawid/dotfilesnew" target="_blank"><img alt="undefined" src="https://img.shields.io/github/last-commit/albawid/dotfilesnew?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/albawid" target="_blank"><img alt="undefined" src="https://img.shields.io/github/repo-size/albawid/dotfilnew?label=Dotfiles%20Size&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/albawid/dotfiles" target="_blank"><img alt="undefined" src="https://img.shields.io/github/last-commit/albawid/dotfiles?style=for-the-badge&logo=github"></a>
 <a href="https://t.me/albawid" target="_blank"><img src="https://img.shields.io/badge/telegram-albawid-blue?label=telegram&style=for-the-badge&logo=telegram"></a>
-<a href="https://github.com/albawid/dotfilesnew/blob/master/LICENSE.md" target="_blank"><img alt="undefined" src="https://img.shields.io/github/license/albawid/dotfilesnew?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/albawid/dotfiles/blob/master/LICENSE.md" target="_blank"><img alt="undefined" src="https://img.shields.io/github/license/albawid/dotfiles?style=for-the-badge&logo=github"></a>
 </p>
 
 ## Daftar Isi
@@ -40,22 +40,22 @@ Sedikit rincian OS yang saya gunakan
 ## Tangkapan Layar
 
 #### Terminal
-![terminal](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/termnal.png)
+![terminal](https://github.com/albawid/dotfiles/blob/master/screenshoot/termnal.png)
 
 #### Tmux
-![tmux](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/tmux.png)
+![tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/tmux.png)
 
 #### Neovim
-![neovim](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/neovim.png)
+![neovim](https://github.com/albawid/dotfiles/blob/master/screenshoot/neovim.png)
 
 #### Nvim-Tmux
-![nvim+tmux](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/nvim%2Btmux.png)
+![nvim+tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/nvim%2Btmux.png)
 
 #### Rofi
-![rofi](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/rofi.png)
+![rofi](https://github.com/albawid/dotfiles/blob/master/screenshoot/rofi.png)
 
 #### Polybar
-![polybar](https://github.com/albawid/dotfilesnew/blob/master/screenshoot/polybar.png)
+![polybar](https://github.com/albawid/dotfiles/blob/master/screenshoot/polybar.png)
 
 ## Cara Install
 ###### Kapan-kapan heheheh
