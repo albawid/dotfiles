@@ -11,6 +11,17 @@ colorscheme OceanicNext
 " --[ Remapping ]------------------------------------------------------------------
 map <C-n> :NERDTreeToggle<CR>
 
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 " --[ Pengaturan colorscheme ]-----------------------------------------------------
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
@@ -22,6 +33,7 @@ endif
 " --[ Plugin ]--------------------------------------------------------------------
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'mhartington/oceanic-next'
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline'
