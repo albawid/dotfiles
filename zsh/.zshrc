@@ -17,6 +17,7 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 # Input/output
 #
+export PATH=$HOME/.local/bin:$PATH
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
 bindkey -e
