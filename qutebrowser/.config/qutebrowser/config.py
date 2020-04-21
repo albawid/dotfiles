@@ -1446,8 +1446,8 @@ c.colors.tabs.even.bg = xresources["*.color0"]
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = xresources["*.color8"]
-c.colors.tabs.selected.odd.bg = xresources["*.color8"]
+c.colors.tabs.selected.even.bg = xresources["*.color7"]
+c.colors.tabs.selected.odd.bg = xresources["*.color7"]
 
 c.colors.tabs.selected.even.fg = xresources["*.color0"]
 c.colors.tabs.selected.odd.fg = xresources["*.color0"]
