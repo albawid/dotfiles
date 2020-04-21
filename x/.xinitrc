@@ -40,7 +40,7 @@ export BROWSER=/usr/bin/qutebrowser
 
 #
 ## mpd
-[ ! -s ~/.mpd/pid ] && mpd
+[ ! -s ~/.config/mpd/pid ] && mpd
 
 #
 ## Session
