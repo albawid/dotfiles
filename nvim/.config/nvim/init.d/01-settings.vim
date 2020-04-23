@@ -13,3 +13,5 @@ endif
 
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

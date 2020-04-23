@@ -12,7 +12,8 @@ let g:lightline = {
 \             [ 'filename', 'modified' ]],
 \    'right':[[ 'lineinfo' ],
 \             [ 'percent' ],
-\             [ 'filetype', 'fileformat', 'fileencoding' ] ]
+\             [ 'filetype' ],
+\             [ 'fileformat', 'fileencoding' ]]
 \   },
 \   'component': {
 \     'lineinfo': ' %3l:%-2v',

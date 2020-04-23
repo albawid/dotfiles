@@ -1,4 +1,5 @@
 {
+"sh.enable":true,
 "coc.preferences.colorSupport": true,
 "highlight.document.enable": true,
 "highlight.colors.enable": false,

@@ -1,10 +1,10 @@
  " --[ indentLine ]--------------------------------------------------------------------
 let g:indentLine_enabled = 1
-"let g:indentLine_char = '¦'
 
 " INDENTLINE
-let g:indentLine_first_char = '▏'
-let g:indentLine_char = '▏'
+let g:indentLine_first_char = '┋'
+let g:indentLine_char = '┋'
+"let g:indentLine_char = '¦'┆┋
 
 " Set indentline ignored list
 let g:indentLine_bufTypeExclude = ['help']
