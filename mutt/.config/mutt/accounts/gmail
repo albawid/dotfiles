@@ -1,0 +1,33 @@
+set from = "csodynamax1@gmail.com"
+set sendmail = "/usr/local/bin/msmtp -a gmail"
+
+# Set folders
+set spoolfile = "+gmail/INBOX"
+set mbox = "+gmail/archive"
+set postponed = "+gmail/drafts"
+set record = "+gmail/sent"
+set trash = "+gmail/trash"
+
+# Alternate email addresses.
+alternates ^csodynamax1@gmail.com$
+
+# custom signaure
+set signature = ~/.config/mutt/TTD/default
+
+color status red default
+
+macro index o "<shell-escape>mbsync gmail<enter>" "run mbsync to sync mail for this account"
+
+macro index,pager s \
+  "<enter-command>set my_old_resolve=\$resolve noresolve<enter>\
+  <tag-prefix><clear-flag>n<enter-command>set resolve=\$my_old_resolve<enter>\
+  <save-message>+gmail/junk<enter>" \
+  "mark as read and move to junk folder"
+
+macro index,pager a \
+  "<save-message>+gmail/archive<enter>"  \
+  "move message to the archive"
+
+macro index,pager i \
+  "<save-message>+gmail/INBOX<enter>"  \
+  "move message to the inbox"

@@ -1,0 +1,33 @@
+set from = "albawid@rape.lol"
+set sendmail = "/usr/local/bin/msmtp -a rape"
+
+# Set folders
+set spoolfile = "+rape/INBOX"
+set mbox = "+rape/archive"
+set postponed = "+rape/drafts"
+set record = "+rape/sent"
+set trash = "+rape/trash"
+
+# Alternate email addresses.
+alternates ^albawid@rape.lol$ ^csodynamax1@gmail.com$
+
+# custom signaure
+set signature = ~/.config/mutt/TTD/custom
+
+color status cyan default
+
+macro index o "<shell-escape>mbsync rape<enter>" "run mbsync to sync mail for this account"
+
+macro index,pager s \
+  "<enter-command>set my_old_resolve=\$resolve noresolve<enter>\
+  <tag-prefix><clear-flag>n<enter-command>set resolve=\$my_old_resolve<enter>\
+  <save-message>+rape/junk<enter>" \
+  "mark as read and move to junk folder"
+
+macro index,pager a \
+  "<save-message>+rape/archive<enter>"  \
+  "move message to the archive"
+
+macro index,pager i \
+  "<save-message>+rape/INBOX<enter>"  \
+  "move message to the inbox"
