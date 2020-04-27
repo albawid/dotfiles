@@ -193,7 +193,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen 
 #
 ## Keybinding
 bindsym $mod+F2 exec qutebrowser
-#bindsym $mod+Shift+F2 exec google-chrome-stable
+bindsym $mod+Shift+F2 exec google-chrome-stable
 bindsym $mod+F3 exec thunar
 bindsym $mod+F4 exec st -e 'ranger'
 bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Gambar/' # ss focuse window 
