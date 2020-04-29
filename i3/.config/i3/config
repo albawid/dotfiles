@@ -196,7 +196,7 @@ bindsym $mod+F2 exec qutebrowser
 bindsym $mod+Shift+F2 exec google-chrome-stable
 bindsym $mod+F3 exec thunar
 bindsym $mod+F4 exec st -e 'ranger'
-bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Gambar/' # ss focuse window 
+bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Gambar/' # ss focused window 
 bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Gambar/' # ss fullscreen 
 bindsym $mod+F12 exec --no-startup-id connman-gtk
 bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray
