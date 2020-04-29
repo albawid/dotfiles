@@ -28,17 +28,17 @@ menu_valign         = bottom
 
 font                = Iosevka Nerd Font 10
 
-color_menu_bg       = #121212 90
-color_menu_border   = #121212 90
+color_menu_bg       = #1b2b34 90
+color_menu_border   = #1b2b34 90
 
-color_norm_bg       = #121212 0
-color_norm_fg       = #e8e8d3 100
+color_norm_bg       = #1b2b34 0
+color_norm_fg       = #c0c5ce 100
 
-color_sel_bg        = #e8e8d3 85
-color_sel_fg        = #121212 85
-color_sel_border    = #121212 0
+color_sel_bg        = #c0c5ce 85
+color_sel_fg        = #1b2b34 85
+color_sel_border    = #1b2b34 0
 
-color_sep_fg        = #e8e8d3 0
+color_sep_fg        = #c0c5ce 0
 EOF
 
 (
