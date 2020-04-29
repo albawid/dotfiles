@@ -124,3 +124,5 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
