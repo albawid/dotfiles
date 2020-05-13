@@ -1,11 +1,40 @@
 #!/bin/sh
 
-###################
-# Aliases Command #
-###################
+#
+# user
 alias jam='tty-clock -s -c -C 7 -r -f "%A, %d %B %Y"'
-alias youtube-download="youtube-dl -f 'bestvideo[ext=webm]+bestaudio[ext=webm]/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best'"
+alias youtube-download='youtube-dl -f "bestvideo[ext=webm]+bestaudio[ext=webm]/bestvideo[ext=mp4]+bestaudio[ext=m4a]/best"'
 alias vi3='nvim ~/.config/i3/config'
 alias nf='neofetch --ascii ~/.config/neofetch/ascii/arch'
 alias repo='sudo nvim /etc/pacman.d/mirrorlist'
 alias su='sudo su'
+
+#
+# ls aliases (using exa)
+alias ls='exa --group-directories-first'
+alias lr='exa -Ra' # menampilkan isi tiap directory
+alias lt='exa -Ta' # menampilkan isi foler bentuk tree
+alias ll='exa -lh --header'
+alias la='exa -la --header'
+# alias lss='exa -las' # penggunaan 'lss [SORT]' SORT= name, Name, extension, Extension, size, type, modified, accessed, created, inode.
+
+#
+# file downloader
+alias curl='curl --continue-at - --location --progress-bar --remote-name --remote-time'
+alias wget='wget --continue --progress=bar --timestamping'
+# alias aria2c='aria2c --max-connection-per-server=5 --continue'
+
+#
+# reflector
+alias update-repo='sudo reflector --verbose --latest 50 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+alias update-repo12='$ sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+
+#
+# data directory
+alias cd-sda3='cd /run/media/albawid/sda3/'
+alias cd-sda4='cd /run/media/albawid/sda4/'
+
+#
+# storage
+alias df='df -h'
+alias du='du -h'
