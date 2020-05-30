@@ -23,7 +23,7 @@ if [ ${#option} -gt 0 ]
 then
     case $option in
       Logout)
-        i3exit logout
+        i3-msg exit
         ;;
       Reboot)
         systemctl reboot
