@@ -274,9 +274,22 @@ c.content.host_blocking.enabled = True
 # The file `~/.config/qutebrowser/blocked-hosts` is always read if it
 # exists.
 # Type: List of Url
+#     "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+#     "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+#     "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+
 c.content.host_blocking.lists = [
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+    "http://sysctl.org/cameleon/hosts",
+    "http://winhelp2002.mvps.org/hosts.txt",
+    "https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt",
+    "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+    "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
+    "https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts-VN",
+    "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/facebook/all",
+    "https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts",
+    "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt",
+    "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
     "https://www.malwaredomainlist.com/hostslist/hosts.txt",
 ]
 
