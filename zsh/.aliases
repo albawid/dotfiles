@@ -10,29 +10,30 @@ alias nf='neofetch --ascii ~/.config/neofetch/ascii/arch'
 #
 # ls aliases (using exa)
 alias ls='exa --group-directories-first'
-alias lr='exa -Ra' # menampilkan isi tiap directory
-alias lt='exa -Ta' # menampilkan isi foler bentuk tree
+alias lr='exa -Ra'
+alias lt='exa -Ta'
 alias ll='exa -lh --header'
 alias la='exa -la --header'
-# alias lss='exa -las' # penggunaan 'lss [SORT]' SORT= name, Name, extension, Extension, size, type, modified, accessed, created, inode.
 
 #
 # file downloader
 alias curl='curl --continue-at - --location --progress-bar --remote-name --remote-time'
 alias wget='wget --continue --progress=bar --timestamping'
-# alias aria2c='aria2c --max-connection-per-server=5 --continue'
 
 #
 # reflector
 alias update-repo='sudo reflector --verbose --latest 50 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
-alias update-repo12='$ sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
-
-#
-# data directory
-alias cd-sda3='cd /run/media/albawid/sda3/'
-alias cd-sda4='cd /run/media/albawid/sda4/'
+alias update-repo12='sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
 #
 # storage
 alias df='df -h'
 alias du='du -h'
+
+#
+# Yey
+alias yay='yay --sudoloop'
+
+#
+# cat
+alias cat='bat'
