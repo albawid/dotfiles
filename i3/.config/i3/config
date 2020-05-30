@@ -147,7 +147,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #
-## floating
+## Rule Container
+# Rule Floating
 for_window [class="Lxappearance"] floating enable border normal
 for_window [class="qt5ct"] floating enable border normal
 for_window [class="virtualbox"] floating enable border normal
@@ -156,7 +157,10 @@ for_window [class="Connman-gtk"] floating enable border normal
 for_window [class="mpv"] floating enable
 for_window [class="feh"] floating enable
 
-# Steam application sub-instances
+# Rule Border
+for_window [class="qutebrowser"] border pixel 1
+
+# Rule Steam application sub-instances
 for_window [class="^Steam$" title="^Friends"] floating enable
 for_window [class="^Steam$" title="Steam - News"] floating enable
 for_window [class="^Steam$" title=".* - Chat"] floating enable
@@ -169,31 +173,17 @@ for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Require
 for_window [title="^Steam Keyboard"] floating enable
 
 #
-## scripts 
-#Power
-bindsym $mod+End exec --no-startup-id $HOME/.config/scripts/dmenu_power
-
-#youtube view
-bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/dmenu_ytview
-
-#dmenu_monitor
-bindsym $mod+shift+m exec --no-startup-id $HOME/.config/scripts/dmenu_monitor
-
-#screencast
-bindsym $mod+F1 exec --no-startup-id $HOME/.config/scripts/dmenu_record
-
-#
 ## Container
 title_align center
-default_border pixel 3
+default_border normal 0
 default_floating_border normal 0
 hide_edge_borders none
 workspace_auto_back_and_forth yes
 
 #
 ## Amixer audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ # increase volume up
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- # increase volume down
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ # increase volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- # decrease volume
 bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle # mute volume
 
 #
@@ -203,21 +193,27 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen 
 
 #
 ## Keybinding
-bindsym $mod+F2 exec qutebrowser
-bindsym $mod+Shift+F2 exec google-chrome-stable
-bindsym $mod+F3 exec thunar
-bindsym $mod+F4 exec st -e 'ranger'
-bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Gambar/' # ss focused window
-bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Gambar/' # ss fullscreen
-bindsym $mod+F12 exec --no-startup-id connman-gtk
-bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray
-bindsym $mod+shift+x exec betterlockscreen -l dimblur -t "Enter Nuclear Code..."
+bindsym $mod+F1 exec --no-startup-id $HOME/.config/scripts/dmenu_record # Screen Recording
+bindsym $mod+F2 exec qutebrowser # Internet Browser
+bindsym $mod+Shift+F2 exec google-chrome-stable # You Know
+bindsym $mod+F3 exec thunar # FIle Browser GUI
+bindsym $mod+F4 exec --no-startup-id $HOME/.config/scripts/dmenu_monitor # Screen Rule Options
+bindsym $mod+F12 exec --no-startup-id connman-gtk # Connetion Manager GUI
+bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Picture/Screenshots/' # Screenshot Focused Container
+bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/' # Screenshot Fullscreen
+bindsym $mod+End exec --no-startup-id $HOME/.config/scripts/dmenu_power # Power Opetions
+bindsym $mod+shift+x exec betterlockscreen -l dimblur -t "Enter Nuclear Code..." # Lockscreen
+bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/dmenu_ytview # View Yt Video From Link
+bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray # System Tray Polybar
+bindsym $mod+m exec --no-startup-id ~/.config/polybar/launch.sh toggle # Make Polybar On Off
+
 
 #
 ## autostart
 exec --no-startup-id light -S 30
 exec --no-startup-id jgmenu
-exec --no-startup-id picom -b
+exec --no-startup-id compton -b
+#exec --no-startup-id compton --backend glx --blur-method kawase  --blur-background --blur-strength 18
 exec --no-startup-id ~/.config/polybar/launch.sh start
 exec --no-startup-id $HOME/.config/scripts/feh_bg
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l dimblur"
@@ -235,7 +231,7 @@ bindsym button5 nop
 set_from_resource       $bg             foreground
 set_from_resource       $text           background
 set_from_resource       $border         foreground
-set_from_resource       $inactive-bg    color8
+set_from_resource       $inactive-bg    background
 set_from_resource       $inactive-text  foreground
 set_from_resource       $urgent-bg      color9
 set_from_resource       $urgent-text    forergound
@@ -249,7 +245,7 @@ client.urgent           $urgent-bg      $urgent-bg      $urgent-text    $indicat
 
 #
 ## settings for i3-gaps
-gaps inner 6
+gaps inner 5
 gaps outer 0
 #smart_gaps on
 smart_borders on
