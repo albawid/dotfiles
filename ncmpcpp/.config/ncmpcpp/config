@@ -2,7 +2,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory = ~/.config/ncmpcpp/lyrics
 
 #mpd_connection_timeout = 5
-mpd_music_dir = /run/media/albawid/sda4/musik
+mpd_music_dir = ~/Music
 mpd_crossfade_time = 2
 
 mpd_host = localhost
@@ -25,9 +25,9 @@ volume_color = "default"
 state_line_color = "black"
 
 [playlist]
-playlist_display_mode = "columns"
-song_columns_list_format = (20)[white]{a} (50)[white]{t|f:Title} (20)[white]{b} (7f)[white]{l}
-#song_list_format = "{$8%b - }{%t}$R{%l}"
+playlist_display_mode = "classic"
+#song_columns_list_format = (20)[white]{a} (50)[white]{t|f:Title} (20)[white]{b} (7f)[white]{l}
+song_list_format = "{$8%b - }{%t}$R{%l}"
 #song_list_format = "{$8%a - }{%t}$R{%l}"
 now_playing_prefix = "$b$8"
 now_playing_suffix = "$/b$9"
