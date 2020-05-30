@@ -25,17 +25,17 @@
 ## Orientasi
 Sedikit rincian OS yang saya gunakan
 
-| Nama		| Deskripsi												|
-| :------------	| :---------------------------------------------------------------------------------------------------- |
-| OS		| [Arch Linux](https://www.archlinux.org/download/)						|
-| WM		| [i3](https://i3wm.org/)										|
-| Shell		| [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)						|
-| DM		| [Lightdm](https://github.com/canonical/lightdm)							|
-| Font		| [Iosevka Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)	|
-| Terminal	| [St](https://st.suckless.org/), [xterm](https://wiki.archlinux.org/index.php/Xterm)			|
-| Bar		| [Polybar](https://github.com/polybar/polybar)								|
-| Launcher	| [Rofi](https://github.com/davatorium/rofi),[Jgmenu](https://github.com/johanmalm/jgmenu)		|
-| Text Editor	| [Neovim](https://github.com/neovim/neovim)										|
+| Nama        | Deskripsi                                                                                           |
+| ----------: | :-------------------------------------------------------------------------------------------------- |
+| OS          | [Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux)                                       |
+| WM          | [i3](https://wiki.archlinux.org/index.php/I3)                                                       |
+| Shell       | [Zsh](https://wiki.archlinux.org/index.php/Zsh)                                                     |
+| DM          | [SLiM](https://wiki.archlinux.org/index.php/SLiM)                                                   |
+| Font        | [Iosevka Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)     |
+| Terminal    | [St](https://wiki.archlinux.org/index.php/St), [xterm](https://wiki.archlinux.org/index.php/Xterm)  |
+| Bar         | [Polybar](https://wiki.archlinux.org/index.php/Polybar)                                             |
+| Launcher    | [Rofi](https://wiki.archlinux.org/index.php/Polybar)                                                |
+| Text Editor | [Neovim](https://wiki.archlinux.org/index.php/Neovim)                                               |
 
 ## Tangkapan Layar
 
