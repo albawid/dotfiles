@@ -92,9 +92,9 @@ set sidebar_format = "%B %* [%?N?%N / ?%S]"
 # Mailboxes to show in the sidebar.
 mailboxes =rape
 mailboxes =rape/INBOX =rape/archive =rape/sent =rape/drafts =rape/junk =rape/trash
-mailboxes ="==================="
-mailboxes =gmail
-mailboxes =gmail/INBOX =gmail/archive =gmail/sent =gmail/drafts =gmail/junk =gmail/trash
+#mailboxes ="==================="
+#mailboxes =gmail
+#mailboxes =gmail/INBOX =gmail/archive =gmail/sent =gmail/drafts =gmail/junk =gmail/trash
 
 # source colors and keybindings
 # keeping those in one place makes it easier for my brain
