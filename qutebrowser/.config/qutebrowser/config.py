@@ -1064,7 +1064,8 @@ c.url.auto_search = "naive"
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = "about:blank"
+#c.url.default_page = "about:blank"
+c.url.default_page = "/home/albawid/.config/qutebrowser/startpage/Prism/index.htm"
 
 # URL segments where `:navigate increment/decrement` will search for a
 # number.
@@ -1103,7 +1104,6 @@ c.url.searchengines = {
     "gten": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text={}",
     "gtid": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=id&text={}",
     "mal": "https://myanimelist.net/search/all?q={}",
-    "gd": "https://drive.google.com/drive/u/0/my-drive={}",
     "wp": "https://id.wikipedia.org/w/index.php?search={}",
     "yt": "https://www.youtube.com/results?search_query={}",
     "komiku": "https://komiku.co.id/?post_type=manga&s={}",
@@ -1111,7 +1111,8 @@ c.url.searchengines = {
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = "https://www.google.com/"
+#c.url.start_pages = "https://www.google.com/"
+c.url.start_pages = "/home/albawid/.config/qutebrowser/startpage/Prism/index.htm"
 
 # URL parameters to strip with `:yank url`.
 # Type: List of String
