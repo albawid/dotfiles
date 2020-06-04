@@ -5,4 +5,5 @@
 **/__pycache__/*
 **/api.json
 **/qsettings
+**/*.gpg
 qutebrowser/.config/qutebrowser/autoconfig.yml
