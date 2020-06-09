@@ -156,6 +156,7 @@ for_window [class="Xarchiver"] floating enable border normal
 for_window [class="Connman-gtk"] floating enable border normal
 for_window [class="mpv"] floating enable
 for_window [class="feh"] floating enable
+for_window [class="Virt-manager"] floating enable
 
 # Rule Border
 for_window [class="qutebrowser"] border pixel 1
