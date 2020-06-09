@@ -36,26 +36,14 @@
 
 
 [input]
+# ; method = pulse
+# ; source = auto
 
-# Audio capturing method. Possible methods are: 'pulse', 'alsa' or 'fifo'.
-# Defaults to 'pulse', 'alsa' or 'fifo', in that order, dependent on what support cava was built with.
-#
-# All input methods uses the same config variable 'source'
-# to define where it should get the audio.
-#
-# For pulseaudio 'source' will be the source. Default: 'auto', which uses the monitor source of the default sink
-# (all pulseaudio sinks(outputs) have 'monitor' sources(inputs) associated with them).
-# 
-# For alsa 'source' will be the capture device.
-# For fifo 'source' will be the path to fifo-file.
-; method = pulse
-; source = auto
+# method = alsa
+# source = hw:Loopback,1
 
-; method = alsa
-; source = hw:Loopback,1
-
-; method = fifo
-; source = /tmp/mpd.fifo
+method = fifo
+source = /tmp/mpd.fifo
 
 
 
@@ -102,9 +90,9 @@
 # Gradient mode, only hex defined colors are supported, background must also be defined in hex
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
-#; gradient = 0
-#; gradient_color_1 = '#0099ff'
-#; gradient_color_2 = '#ff3399'
+gradient = 1
+gradient_color_1 = '#99c794'
+gradient_color_2 = '#fac863'
 
 
 
