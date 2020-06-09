@@ -1,0 +1,28 @@
+!!---------------------------
+!! URxvt Configuration
+!!---------------------------
+! fonts
+URxvt*font:           xft:Iosevka Nerd Font:regular:size=11
+URxvt*imFont:         xft:Iosevka Nerd Font:regular:size=11
+URxvt*boldFont:       xft:Iosevka Nerd Font:bold:size=11
+URxvt*italicFont:     xft:Iosevka Nerd Font:italic:size=11
+URxvt*boldItalicFont: xft:Iosevka Nerd Font:regular:size=11
+
+! Settings
+URxvt.termName:       screen-256color
+URxvt.color12:        rgb:5c/5c/ff
+URxvt.geometry:       134x35+240x400
+URxvt.scrollBar:      false
+URxvt.internalBorder: 22
+!!URxvt.background:     #1b2b34
+
+! Perl Extention
+URxvt.perl-lib:           ~/.urxvt/urxvt-perls
+URxvt.perl-ext-common:    default,matcher,clipboard
+URxvt.clipboard.autocopy: true
+
+! Keybind
+URxvt.iso14755:           False
+URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
+URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
+
