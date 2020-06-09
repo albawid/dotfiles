@@ -5,3 +5,4 @@
 #include "/home/albawid/.Xresources.d/cursor"
 #include "/home/albawid/.Xresources.d/font"
 #include "/home/albawid/.Xresources.d/xterm"
+#include "/home/albawid/.Xresources.d/urxvt"
