@@ -292,7 +292,13 @@ c.content.host_blocking.lists = [
     "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
     "https://www.malwaredomainlist.com/hostslist/hosts.txt",
     "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
-
+    "https://someonewhocares.org/hosts/hosts",
+    "https://www.hostsfile.org/Downloads/hosts.txt",
+    "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
+    "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
+    "https://getadhell.com/standard-package.txt",
+    "https://pgl.yoyo.org/as/serverlist.php",
+    "https://adaway.org/hosts.txt",
 ]
 
 # A list of patterns that should always be loaded, despite being ad-
@@ -310,6 +316,7 @@ c.content.host_blocking.whitelist = [
     "https://www.fakku.net",
     "https://hentainexus.com",
     "https://luscious.net",
+    "https://www.luscious.net",
     "https://nhentai.net",
     "https://hitomi.la",
     "https://sukebei.nyaa.si",
