@@ -1,0 +1,2 @@
+sh ~/.config/scripts/feh_bg &
+tint2 &
