@@ -44,11 +44,12 @@ export BROWSER=/usr/bin/qutebrowser
 
 #
 ## Session
-# exec i3
-DEFAULTSESSION=i3
- case "$1" in
-   i3) exec i3 ;;
-   i3-with-shmlog) exec i3-with-shmlog ;;
-   *) exec $DEFAULTSESSION ;;
- esac
+exec $1
+# DEFAULTSESSION=i3
+#  case "$1" in
+#    i3) exec i3 ;;
+#    i3-with-shmlog) exec i3-with-shmlog ;;
+#    openbox) exec openbox ;;
+#    *) exec $DEFAULTSESSION ;;
+#  esac
 
