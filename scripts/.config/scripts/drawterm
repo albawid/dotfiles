@@ -23,7 +23,7 @@ if [ "$W" -gt "1" ]; then
     let W=$(( $W / 7 ))-2
     let H=$(( $H / 15 ))-1
 
-    xterm -g $W"x"$H"+"$X"+"$Y &
+    kitty -g $W"x"$H"+"$X"+"$Y &
 
     for i in {0..49}; do # timeout
         if ps -p $! >/dev/null; then
