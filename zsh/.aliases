@@ -37,3 +37,4 @@ alias yay='yay --sudoloop'
 #
 # cat
 alias cat='bat'
+alias grep='grep --color=auto'
