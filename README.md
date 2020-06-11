@@ -12,56 +12,36 @@
 ## Daftar Isi
 * [Orientasi](#orientasi)
 * [Tangkapan Layar](#tangkapan-layar)
-	+ [Terminal](#terminal)
+	+ [I3-Gaps](#i3-gaps)
+	+ [Openbox](#openbox)
 	+ [Tmux](#tmux)
-	+ [Neovim](#neovim)
-	+ [Nvim + Tmux](#nvim-tmux)
-	+ [Rofi](#rofi)
-	+ [Polybar](#polybar)
-* [Cara Install](#cara-install)
-* [Penutup](#penutup)
 * [Lisensi](#LICENSE)
 
 ## Orientasi
 Sedikit rincian OS yang saya gunakan
 
-| Nama        | Deskripsi                                                                                           |
-| ----------: | :-------------------------------------------------------------------------------------------------- |
-| OS          | [Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux)                                       |
-| WM          | [i3](https://wiki.archlinux.org/index.php/I3)                                                       |
-| Shell       | [Zsh](https://wiki.archlinux.org/index.php/Zsh)                                                     |
-| DM          | [SLiM](https://wiki.archlinux.org/index.php/SLiM)                                                   |
-| Font        | [Iosevka Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)     |
-| Terminal    | [St](https://wiki.archlinux.org/index.php/St), [xterm](https://wiki.archlinux.org/index.php/Xterm)  |
-| Bar         | [Polybar](https://wiki.archlinux.org/index.php/Polybar)                                             |
-| Launcher    | [Rofi](https://wiki.archlinux.org/index.php/Polybar)                                                |
-| Text Editor | [Neovim](https://wiki.archlinux.org/index.php/Neovim)                                               |
+| Nama             | Deskripsi                                                                                                 |
+|-----------------:|:----------------------------------------------------------------------------------------------------------|
+| Operating System | [Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux)                                             |
+| Window Manager   | [I3](https://wiki.archlinux.org/index.php/I3), [Openbox](https://wiki.archlinux.org/index.php/Openbox)    |
+| Shell            | [Zsh](https://wiki.archlinux.org/index.php/Zsh)                                                           |
+| Display Manager  | [SLiM](https://wiki.archlinux.org/index.php/SLiM)                                                         |
+| Font             | [Iosevka Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)           |
+| Terminal         | [St](https://wiki.archlinux.org/index.php/St), [kitty](https://wiki.archlinux.org/index.php/Kitty)        |
+| Bar              | [Polybar](https://wiki.archlinux.org/index.php/Polybar)                                                   |
+| Launcher         | [Rofi](https://wiki.archlinux.org/index.php/Polybar), [Dmenu](https://wiki.archlinux.org/index.php/Dmenu) |
+| Text Editor      | [Neovim](https://wiki.archlinux.org/index.php/Neovim)                                                     |
 
 ## Tangkapan Layar
 
-#### Terminal
-![terminal](https://github.com/albawid/dotfiles/blob/master/screenshoot/terminal.png)
+#### I3-Gaps
+![i3-gaps](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-i3.png)
 
-#### Tmux
-![tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/tmux.png)
+#### Openbox
+![openbox](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsutOB.png)
 
-#### Neovim
-![neovim](https://github.com/albawid/dotfiles/blob/master/screenshoot/neovim.png)
-
-#### Nvim-Tmux
-![nvim+tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/nvim%2Btmux.png)
-
-#### Rofi
-![rofi](https://github.com/albawid/dotfiles/blob/master/screenshoot/rofi.png)
-
-#### Polybar
-![polybar](https://github.com/albawid/dotfiles/blob/master/screenshoot/polybar.png)
-
-## Cara Install
-###### Kapan-kapan heheheh
-
-## Penutup
-Tujuan pembuatan github ini diharapkan bisa dipakai sebagai bahan pembelajaran sekaligus tempat backup konfigurasi bagi pemilik dotfiles
+#### Tmux [(oh-my-tmux)](https://github.com/gpakosz/.tmux)
+![tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-tmux.png)
 
 ## LICENSE
-![MIT_logo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/220px-MIT_logo.svg.png)
+MIT
