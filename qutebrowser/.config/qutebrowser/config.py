@@ -286,12 +286,10 @@ c.content.host_blocking.lists = [
     "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
     "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
     "https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts-VN",
-    "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/facebook/all",
     "https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts",
     "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt",
     "https://raw.githubusercontent.com/tiuxo/hosts/master/ads",
     "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
     "https://someonewhocares.org/hosts/hosts",
     "https://www.hostsfile.org/Downloads/hosts.txt",
     "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
@@ -309,19 +307,7 @@ c.content.host_blocking.lists = [
 # setting with a URL pattern instead. Local domains are always exempt
 # from hostblocking.
 # Type: List of UrlPattern
-c.content.host_blocking.whitelist = [
-    "https://doujins.com",
-    "https://www.tsumino.com",
-    "https://hentai.cafe",
-    "https://www.fakku.net",
-    "https://hentainexus.com",
-    "https://luscious.net",
-    "https://www.luscious.net",
-    "https://nhentai.net",
-    "https://hitomi.la",
-    "https://sukebei.nyaa.si",
-    "https://www.reddit.com",
-]
+c.content.host_blocking.whitelist = []
 
 # Enable hyperlink auditing (`<a ping>`).
 # Type: Bool
@@ -636,7 +622,7 @@ c.hints.auto_follow_timeout = 0
 
 # CSS border value for hints.
 # Type: String
-c.hints.border = "1px solid #E3BE23"
+c.hints.border = "1px solid #fac863"
 
 # Characters used for hint strings.
 # Type: UniqueCharString
@@ -1285,7 +1271,7 @@ c.colors.keyhint.fg = xresources["*.color15"]
 
 # Highlight color for keys to complete the current keychain.
 # Type: QssColor
-c.colors.keyhint.suffix.fg = "#FFFF00"
+c.colors.keyhint.suffix.fg = "#fac863"
 
 # Background color of the keyhint widget.
 # Type: QssColor
@@ -1443,15 +1429,15 @@ c.colors.tabs.bar.bg = xresources["*.color0"]
 
 # Color gradient start for the tab indicator.
 # Type: QtColor
-c.colors.tabs.indicator.start = "#0000aa"
+c.colors.tabs.indicator.start = "#6699cc"
 
 # Color gradient end for the tab indicator.
 # Type: QtColor
-c.colors.tabs.indicator.stop = "#00aa00"
+c.colors.tabs.indicator.stop = "#99c794"
 
 # Color for the tab indicator on errors.
 # Type: QtColor
-c.colors.tabs.indicator.error = "#ff0000"
+c.colors.tabs.indicator.error = "#ec5f67"
 
 # Color gradient interpolation system for the tab indicator.
 # Type: ColorSystem
@@ -1480,8 +1466,8 @@ c.colors.tabs.even.bg = xresources["*.color0"]
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = xresources["*.color7"]
-c.colors.tabs.selected.odd.bg = xresources["*.color7"]
+c.colors.tabs.selected.even.bg = xresources["*.color8"]
+c.colors.tabs.selected.odd.bg = xresources["*.color8"]
 
 c.colors.tabs.selected.even.fg = xresources["*.color0"]
 c.colors.tabs.selected.odd.fg = xresources["*.color0"]
