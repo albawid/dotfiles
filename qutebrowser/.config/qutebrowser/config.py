@@ -1089,13 +1089,6 @@ c.url.incdec_segments = ["path", "query"]
 # Type: Bool
 c.url.open_base_url = True
 
-# Search engines which can be used via the address bar. Maps a search
-# engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
-# placeholder. The placeholder will be replaced by the search term, use
-# `{{` and `}}` for literal `{`/`}` signs. The search engine named
-# `DEFAULT` is used when `url.auto_search` is turned on and something
-# else than a URL was entered to be opened. Other search engines can be
-# used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
 c.url.searchengines = {
@@ -1113,6 +1106,12 @@ c.url.searchengines = {
     "wp": "https://id.wikipedia.org/w/index.php?search={}",
     "yt": "https://www.youtube.com/results?search_query={}",
     "komiku": "https://komiku.co.id/?post_type=manga&s={}",
+    "nh": "https://nhentai.net/g/{}",
+    "hc": "https://hentai.cafe/{}",
+    "fkku": "https://www.fakku.net/hentai/{}",
+    "hn": "https://hentainexus.com/view/{}",
+    "lusci": "https://luscious.net/albums/{}",
+    "hito": "https://hitomi.la/galleries/{}.html",
 }
 
 # Page(s) to open at the start.
