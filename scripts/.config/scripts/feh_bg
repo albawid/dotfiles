@@ -1,4 +1,4 @@
 #!/bin/sh
-feh  --bg-fill '/home/albawid/Picture/Wallpaper/green-plants.jpg'
-
+#feh  --bg-fill '/home/albawid/Picture/Wallpaper/green-plants.jpg'
+feh  --bg-fill '/home/albawid/Picture/Wallpaper/hologram.jpg'
 # feh  --bg-fill '/home/albawid/Picture/Wallpaper/thumb-1920-945948.jpg'
