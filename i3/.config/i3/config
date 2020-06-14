@@ -160,6 +160,7 @@ for_window [class="Virt-manager"] floating enable
 
 # Rule Border
 for_window [class="qutebrowser"] border pixel 1
+#for_window [class=".*"] title_format "  <span foreground='$background' background='$foreground'> %class </span><b>  %title </b>"
 
 # Rule Steam application sub-instances
 for_window [class="^Steam$" title="^Friends"] floating enable
@@ -212,9 +213,7 @@ bindsym $mod+m exec --no-startup-id ~/.config/polybar/launch.sh toggle # Make Po
 #
 ## autostart
 exec --no-startup-id light -S 30
-exec --no-startup-id jgmenu
-exec --no-startup-id compton -b
-#exec --no-startup-id compton --backend glx --blur-method kawase  --blur-background --blur-strength 18
+exec --no-startup-id picom -b
 exec --no-startup-id ~/.config/polybar/launch.sh start
 exec --no-startup-id $HOME/.config/scripts/feh_bg
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l dimblur"
