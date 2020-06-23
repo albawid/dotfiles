@@ -38,3 +38,7 @@ alias yay='yay --sudoloop'
 # cat
 alias cat='bat'
 alias grep='grep --color=auto'
+
+#
+# scrcpy
+alias wirelesscast='adb connect 10.34.141.142:5555; scrcpy -S -b 2M -m 1080 --push-target /sdcard/Download &'
