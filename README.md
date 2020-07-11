@@ -12,10 +12,10 @@
 ## Daftar Isi
 * [Orientasi](#orientasi)
 * [Tangkapan Layar](#tangkapan-layar)
-	+ [I3-Gaps](#i3-gaps)
-	+ [Openbox](#openbox)
+  + [I3-Gaps](#i3-gaps)
+  + [Openbox](#openbox)
   + [Dwm](#dwm)
-	+ [Tmux](#tmux)
+  + [Tmux](#tmux)
 * [Lisensi](#LICENSE)
 
 ## Orientasi
@@ -36,16 +36,16 @@ Sedikit rincian OS yang saya gunakan
 ## Tangkapan Layar
 
 #### I3-Gaps
-![i3-gaps](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-i3.png)
+![i3-gaps](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-i3.png)
 
 #### Openbox
-![openbox](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-openbox.png)
+![openbox](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-openbox.png)
 
 #### Dwm
-![dwm](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-dwm.png)
+![dwm](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-dwm.png)
 
 #### Tmux
-![tmux](https://github.com/albawid/dotfiles/blob/master/screenshoot/skrinsut-tmux.png)
+![tmux](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-tmux.png)
 
 ## LICENSE
 [MIT](https://github.com/albawid/dotfiles/blob/master/LICENSE.md)
