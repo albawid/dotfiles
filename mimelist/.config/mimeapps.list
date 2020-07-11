@@ -1,0 +1,10 @@
+[Added Associations]
+video/x-matroska=mpv.desktop;
+text/plain=mousepad.desktop;nvim.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/png=feh.desktop;
+image/jpeg=feh.desktop;
+application/x-wine-extension-ini=mousepad.desktop;
+
+[Default Applications]
+video/x-matroska=mpv.desktop

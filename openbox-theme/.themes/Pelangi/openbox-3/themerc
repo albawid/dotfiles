@@ -1,0 +1,94 @@
+!! Pelangi by Addy
+!! Inspired by Onyx by Dana Jansens Neechan
+
+!! Menu background
+menu.items.bg: flat
+menu.items.bg.color: #1b2b34
+menu.overlap.x: -6
+
+!! Menu text
+menu.items.text.color: #c0c5ce
+menu.items.justify: left
+menu.items.disabled.text.color: #4f5866
+
+!! Menu separator
+menu.separator.padding.height: 2
+menu.separator.color: #1b2b34
+
+!! Menu border
+menu.border.width: 2
+menu.border.color: #1b2b34
+
+!! Menu headers
+menu.title.bg: gradient horizontal flat
+menu.title.bg.color: #FAC863
+menu.title.bg.colorTo: #99C794
+menu.title.text.color: #1b2b34
+menu.title.text.justify: center
+
+!! Selected menu item
+menu.items.active.bg: gradient horizontal flat
+menu.items.active.bg.color: #FAC863
+menu.items.active.bg.colorTo: #99C794
+menu.items.active.text.color: #1b2b34
+
+!! Titlebar
+window.active.title.bg: gradient horizontal flat
+window.active.title.bg.color: #F99157
+window.active.title.bg.colorTo: #99C794
+
+window.inactive.title.bg: gradient horizontal flat
+window.inactive.title.bg.color: #FAC863
+window.inactive.title.bg.colorTo: #99C794
+
+!! Titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #1b2b34
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #1b2b34
+
+!! Window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat
+
+window.active.button.*.image.color: #99C794
+window.active.button.disabled.image.color: #99C794
+window.inactive.button.*.image.color: #99C794
+window.inactive.button.disabled.image.color: #99C794
+
+window.active.button.*.hover.bg.color: #99C794
+window.active.button.*.pressed.bg.color: #1b2b34
+window.active.button.close.hover.image.color: #EC5F67
+window.active.button.max.hover.image.color: #6699CC
+window.active.button.iconify.hover.image.color: #C594C5
+window.active.button.shade.hover.image.color: #e3788f
+window.active.button.desk.hover.image.color: #e3788f
+window.inactive.button.*.pressed.bg.color: #1b2b34
+
+!! Borders
+window.active.border.color: #1B2B34
+window.inactive.border.color: #1B2B34
+border.width: 0
+padding.width: 2
+padding.height: 0
+window.handle.width: 0
+window.active.client.color:  #1B2B34
+window.inactive.client.color:  #1B2B34
+window.client.padding.width: 0
+window.client.padding.height: 0
+
+!! On-screen displays
+osd.border.width: 1
+osd.border.color: #1B2B34
+osd.label.text.color: #d8d8d8
+osd.bg: flat solid
+osd.bg.color: #1B2B34
+osd.label.bg: flat solid
+osd.label.bg.color: #1B2B34
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #81a1c1
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #d8dee8
