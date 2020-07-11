@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://github.com/albawid/dotfiles/blob/master/screenshoot/header.png"><img src="https://github.com/albawid/dotfiles/blob/master/screenshoot/header.png"></a>
+<a href="https://github.com/albawid/dotfiles/blob/master/screenshot/header.png"><img src="https://github.com/albawid/dotfiles/blob/master/screenshot/header.png"></a>
 </p>
 
 <p align="center">
