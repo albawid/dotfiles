@@ -1,0 +1,46 @@
+[bar/systray]
+monitor = ${assets.monitor}
+
+fixed-center = true
+enable-ipc = true
+wm-restack = bspwm
+override-redirect = true
+
+bottom = false
+width = 14%
+height = 20
+line-size = 3
+offset-x = 85%
+offset-y = 95.2%
+
+background = ${color.background}
+foreground = ${color.brightwhite}
+
+border-color = ${color.brightwhite}
+border-top-size = 0
+border-bottom-size = 0
+border-left-size = 0
+border-right-size = 0
+
+radius = 0
+
+font-0 = ${assets.font-0}
+font-1 = ${assets.font-1}
+font-2 = ${assets.font-2}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+tray-position = right
+tray-padding = 0
+tray-maxsize = 16
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+tray-detached = false
+
+modules-left = youtube right screenshot right eject right monitor right
+modules-center = 
+modules-right =
+module-margin = 0
+module-padding = 0
