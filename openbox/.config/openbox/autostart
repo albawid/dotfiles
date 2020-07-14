@@ -1,2 +1,2 @@
-sh ~/.config/scripts/feh_bg &
+feh --bg-fill '/home/albawid/Picture/Wallpaper/green-plants.jpg' &
 tint2 &

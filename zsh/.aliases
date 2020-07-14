@@ -35,6 +35,10 @@ alias du='du -h'
 alias yay='yay --sudoloop'
 
 #
+# sudo
+alias sudo='sudo -p "Password:"'
+
+#
 # cat
 alias cat='bat'
 alias grep='grep --color=auto'

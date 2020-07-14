@@ -91,8 +91,8 @@ source = /tmp/mpd.fifo
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
 gradient = 1 
-gradient_color_1 = '#c0c5ce'
-gradient_color_2 = '#c0c5ce'
+gradient_color_1 = '#99c794'
+gradient_color_2 = '#fac863'
 
 
 

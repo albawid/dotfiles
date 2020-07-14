@@ -36,7 +36,7 @@ screencasthd() { \
   -c:a aac \
   -c:v libx264rgb -crf 0 -preset ultrafast \
   -threads 4 \
-  "$HOME/vid/ScreenRecorder/screencasthd-$(date '+%y%m%d-%H%M-%S').mp4" &
+  "$HOME/Video/screencasthd-$(date '+%y%m%d-%H%M-%S').mp4" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }
@@ -54,7 +54,7 @@ screencast() { \
   -c:a aac \
   -c:v libx264 -pix_fmt yuv420p -qp 18 -q:v 1 \
   -threads 4 \
-  "$HOME/vid/ScreenRecorder/screencast-$(date '+%y%m%d-%H%M-%S').mp4" &
+  "$HOME/Video/screencast-$(date '+%y%m%d-%H%M-%S').mp4" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }
@@ -68,7 +68,7 @@ video() { \
   -i :0.0+0,0 \
   -c:v libx264 -pix_fmt yuv420p -preset veryfast -q:v 1 \
   -threads 4 \
-  "$HOME/vid/ScreenRecorder/video-$(date '+%y%m%d-%H%M-%S').mp4" &
+  "$HOME/Video/video-$(date '+%y%m%d-%H%M-%S').mp4" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }
@@ -77,7 +77,7 @@ audio() { \
   ffmpeg \
   -f pulse -i default \
   -c:a flac \
-  "$HOME/vid/audio-$(date '+%y%m%d-%H%M-%S').flac" &
+  "$HOME/Video/audio-$(date '+%y%m%d-%H%M-%S').flac" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }

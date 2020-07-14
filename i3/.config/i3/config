@@ -1,3 +1,4 @@
+# vim: filetype=i3config
 # i3 config file (v4)
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -5,7 +6,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:Iosevka Nerd Font 10
+font xft:Iosevka Nerd Font 11
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -23,7 +24,6 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run
-bindsym $mod+z exec jgmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -161,7 +161,9 @@ for_window [class="PCSX2"] floating enable
 
 # Rule Border
 for_window [class="qutebrowser"] border pixel 1
-#for_window [class=".*"] title_format "  <span foreground='$background' background='$foreground'> %class </span><b>  %title </b>"
+
+# Rule Title
+for_window [class=".*"] title_format "<span foreground='$bg' background='$text'><b> %class </b></span><span foreground='$text' background='$bg'></span>    <span foreground='$text' background='$bg'>%title</span> "
 
 # Rule Steam application sub-instances
 for_window [class="^Steam$" title="^Friends"] floating enable
@@ -177,7 +179,7 @@ for_window [title="^Steam Keyboard"] floating enable
 
 #
 ## Container
-title_align center
+title_align left
 default_border normal 0
 default_floating_border normal 0
 hide_edge_borders none
@@ -196,53 +198,80 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen 
 
 #
 ## Keybinding
-bindsym $mod+F1 exec --no-startup-id $HOME/.config/scripts/dmenu_record # Screen Recording
-bindsym $mod+F2 exec qutebrowser # Internet Browser
-bindsym $mod+Shift+F2 exec google-chrome-stable # You Know
-bindsym $mod+F3 exec thunar # FIle Browser GUI
-bindsym $mod+F4 exec --no-startup-id $HOME/.config/scripts/dmenu_monitor # Screen Rule Options
-bindsym $mod+F12 exec --no-startup-id connman-gtk # Connetion Manager GUI
-bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Picture/Screenshots/' # Screenshot Focused Container
-bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/' # Screenshot Fullscreen
-bindsym $mod+End exec --no-startup-id $HOME/.config/scripts/dmenu_power # Power Opetions
-bindsym $mod+shift+x exec betterlockscreen -l dimblur -t "Enter Nuclear Code..." # Lockscreen
-bindsym $mod+y exec --no-startup-id $HOME/.config/scripts/dmenu_ytview # View Yt Video From Link
-bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray # System Tray Polybar
-bindsym $mod+m exec --no-startup-id ~/.config/polybar/launch.sh toggle # Make Polybar On Off
+# Screen Recording
+bindsym $mod+F1 exec --no-startup-id /home/albawid/.local/bin/dmenu_record
 
+# Internet Browser
+bindsym $mod+F2 exec qutebrowser
+bindsym $mod+Shift+F2 exec google-chrome-stable
+
+# FIle Browser GUI
+bindsym $mod+F3 exec thunar
+
+# Screen Rule Options
+bindsym $mod+F4 exec --no-startup-id /home/albawid/.local/bin/dmenu_monitor
+
+# Connetion Manager GUI
+bindsym $mod+F12 exec --no-startup-id connman-gtk
+
+# Screenshot Focused Container
+bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Picture/Screenshots/'
+
+# Screenshot Fullscreen
+bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/'
+
+# Power Options
+bindsym $mod+End exec --no-startup-id /home/albawid/.local/bin/dmenu_power
+
+# Lockscreen
+bindsym $mod+shift+x exec betterlockscreen -l dimblur -t "Enter Nuclear Code..."
+
+# View Yt Video From Link
+bindsym $mod+y exec --no-startup-id /home/albawid/.local/bin/dmenu_ytview
+
+# System Tray Polybar
+bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray
+
+# Make Polybar On Off
+bindsym $mod+m exec --no-startup-id ~/.config/polybar/launch.sh toggle
+
+# Scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad
 
 #
 ## autostart
 exec --no-startup-id light -S 30
 exec --no-startup-id picom -b
 exec --no-startup-id ~/.config/polybar/launch.sh start
-exec --no-startup-id $HOME/.config/scripts/feh_bg
+exec --no-startup-id /home/albawid/.local/bin/feh_bg
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l dimblur"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id lxpolkit
 
 #
-## disable buttom
+## disable button
 bindsym button4 nop
 bindsym button5 nop
 
 #
 ## color
 # Define Color          # name          #color
-set_from_resource       $bg             foreground
-set_from_resource       $text           background
+set_from_resource       $bg             background
+set_from_resource       $text           foreground
 set_from_resource       $border         foreground
 set_from_resource       $inactive-bg    background
 set_from_resource       $inactive-text  foreground
 set_from_resource       $urgent-bg      color9
 set_from_resource       $urgent-text    forergound
 set_from_resource       $indicator      foreground
+set_from_resource       $inactive-bulat color8
 
 # Opetion Name          # Border        # Background    # Text          # Indicator
-client.focused          $bg             $bg-color       $text           $indicator
-client.unfocused        $inactive-bg    $inactive-bg    $inactive-text  $indicator
-client.focused_inactive $inactive-bg    $inactive-bg    $inactive-text  $indicator
-client.urgent           $urgent-bg      $urgent-bg      $urgent-text    $indicator
+client.focused          $bg             $bg             $text           $indicator
+client.unfocused        $inactive-bg    $inactive-bg    $inactive-bulat $indicator
+client.focused_inactive $inactive-bg    $inactive-bg    $inactive-bulat $indicator
+client.urgent           $inactive-bg    $inactive-bg    $urgent-bg      $indicator
 
 #
 ## settings for i3-gaps
