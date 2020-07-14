@@ -13,6 +13,7 @@
 * [Orientasi](#orientasi)
 * [Tangkapan Layar](#tangkapan-layar)
   + [I3-Gaps](#i3-gaps)
+    [I3-Gaps New](#i3-gaps new)
   + [Openbox](#openbox)
   + [Dwm](#dwm)
   + [Tmux](#tmux)
@@ -35,8 +36,11 @@ Sedikit rincian OS yang saya gunakan
 
 ## Tangkapan Layar
 
-#### I3-Gaps
+##### I3-Gaps
 ![i3-gaps](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-i3.png)
+
+### I3-Gaps New
+![i3-gaps_new](screenshot/skrinsut-i3_new.png)
 
 #### Openbox
 ![openbox](https://github.com/albawid/dotfiles/blob/master/screenshot/skrinsut-openbox.png)
