@@ -215,10 +215,10 @@ bindsym $mod+F4 exec --no-startup-id /home/albawid/.local/bin/dmenu_monitor
 bindsym $mod+F12 exec --no-startup-id connman-gtk
 
 # Screenshot Focused Container
-bindsym Print exec --no-startup-id scrot -ube 'mv $f ~/Picture/Screenshots/'
+bindsym $mod+Print exec --no-startup-id flameshot gui
 
 # Screenshot Fullscreen
-bindsym $mod+Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/'
+bindsym Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/'
 
 # Power Options
 bindsym $mod+End exec --no-startup-id /home/albawid/.local/bin/dmenu_power
@@ -275,7 +275,7 @@ client.urgent           $inactive-bg    $inactive-bg    $urgent-bg      $indicat
 
 #
 ## settings for i3-gaps
-gaps inner 5
+gaps inner 6
 gaps outer 0
 #smart_gaps on
 smart_borders on

@@ -36,7 +36,7 @@ screencasthd() { \
   -c:a aac \
   -c:v libx264rgb -crf 0 -preset ultrafast \
   -threads 4 \
-  "$HOME/Video/screencasthd-$(date '+%y%m%d-%H%M-%S').mp4" &
+  "$HOME/Video/screencasthd-$(date '+%y%m%d-%H%M-%S').mkv" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }
@@ -54,7 +54,7 @@ screencast() { \
   -c:a aac \
   -c:v libx264 -pix_fmt yuv420p -qp 18 -q:v 1 \
   -threads 4 \
-  "$HOME/Video/screencast-$(date '+%y%m%d-%H%M-%S').mp4" &
+  "$HOME/Video/screencast-$(date '+%y%m%d-%H%M-%S').mkv" &
   echo $! > ~/.recordingpid
   updateicon " REC "
 }
