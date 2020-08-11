@@ -23,6 +23,10 @@ killrecording() {
   exit
 }
 
+screencastcustom() {
+ffmpeg -video_size 1600x900 -framerate 30 -f x11grab -i :0.0 -f pulse -ac 2 -i 0 output.mkv
+}
+
 screencasthd() { \
   ffmpeg -y \
   -f x11grab \
@@ -84,7 +88,7 @@ audio() { \
 
 askrecording() { \
   [ -f ~/.recordingpid ] && asktoend && exit
-  choice=$(printf "screencasthd\\nscreencast\\nvideo\\naudio" | $DMENU -p "Record:")
+  choice=$(printf "screencastcustom\\nscreencasthd\\nscreencast\\nvideo\\naudio" | $DMENU -p "Record:")
   case "$choice" in
     screencasthd) screencasthd;;
     screencast) screencast;;
