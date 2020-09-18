@@ -255,14 +255,15 @@ bindsym $mod+z [urgent=latest] focus
 #
 ## autostart
 exec --no-startup-id light -S 30
-exec --no-startup-id picom -b
+# exec --no-startup-id picom -b
 exec --no-startup-id ~/.config/polybar/launch.sh start
 exec --no-startup-id /home/albawid/.local/bin/feh_bg
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l dimblur"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id lxpolkit
 exec --no-startup-id viper start
-exec --no-startup-id feh-blur -b 10 -d
+exec_always --no-startup-id feh-blur -d
+exec_always killall -9 xcompmgr; xcompmgr
 
 #
 ## disable button
@@ -284,18 +285,14 @@ set_from_resource       $inactive-bulat color8
 
 # Opetion Name          # Border        # Background    # Text          # Indicator
 client.focused          $bg             $bg             $text           $indicator
-client.unfocused        $inactive-bg    $inactive-bg    $inactive-bulat           $indicator
-client.focused_inactive $inactive-bg    $inactive-bg    $inactive-bulat           $indicator
+client.unfocused        $inactive-bg    $inactive-bg    $inactive-bulat $indicator
+client.focused_inactive $inactive-bg    $inactive-bg    $inactive-bulat $indicator
 client.urgent           $inactive-bg    $inactive-bg    $urgent-bg      $indicator
 
 #
 ## settings for i3-gaps
-gaps inner 5
+gaps inner 0
 gaps outer 0
-# gaps bottom 0
-# gaps top 6
-# gaps right 6
-# gaps left 6
 
 #smart_gaps on
 smart_borders on
