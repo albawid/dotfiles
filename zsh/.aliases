@@ -12,8 +12,8 @@ alias nf='neofetch --ascii ~/.config/neofetch/ascii/arch'
 alias ls='exa --group-directories-first'
 alias lr='exa -Ra'
 alias lt='exa -Ta'
-alias ll='exa -lh --header'
-alias la='exa -la --header'
+alias ll='exa -lh --header --group-directories-first' #without hidden file
+alias la='exa -la --header --group-directories-first' #with hidden file
 
 #
 # file downloader
@@ -22,7 +22,7 @@ alias wget='wget --continue --progress=bar --timestamping'
 
 #
 # reflector
-alias update-repo='sudo reflector --verbose --latest 50 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+alias update-repo='sudo reflector --verbose --latest 10 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias update-repo12='sudo reflector --verbose --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
 #

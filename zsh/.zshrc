@@ -24,12 +24,12 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 # Input/output
 #
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH
-export PATH=$HOME/.npm-global/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
+bindkey -v
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT

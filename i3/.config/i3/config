@@ -221,10 +221,10 @@ bindsym $mod+F4 exec --no-startup-id /home/albawid/.local/bin/dmenu_monitor
 bindsym $mod+F12 exec --no-startup-id connman-gtk
 
 # Screenshot Focused Container
-bindsym $mod+Print exec --no-startup-id flameshot gui
+bindsym $mod+Print exec --no-startup-id /home/albawid/.local/bin/ss-scrot
 
 # Screenshot Fullscreen
-bindsym Print --release exec --no-startup-id scrot -e 'mv $f ~/Picture/Screenshots/'
+bindsym Print --release exec --no-startup-id /home/albawid/.local/bin/ss-flameshot
 
 # Power Options
 bindsym $mod+End exec --no-startup-id /home/albawid/.local/bin/dmenu_power
@@ -241,9 +241,8 @@ bindsym $mod+n exec --no-startup-id ~/.config/polybar/scripts/systray
 # Make Polybar On Off
 bindsym $mod+m exec --no-startup-id ~/.config/polybar/launch.sh toggle
 
-# Viper service restart
-bindsym $mod+v+r exec --no-startup-id viper restart
-
+# launch qutebrowser from dmenu
+bindsym $mod+q exec --no-startup-id /home/albawid/.local/bin/dmenu_qutebrowser
 
 # Scratchpad
 bindsym $mod+minus scratchpad show

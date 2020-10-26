@@ -1,0 +1,24 @@
+#!/bin/bash
+
+scrot -ube 'mv $f /tmp/image.png'
+
+# white backdrop
+# convert /tmp/image.png -bordercolor white -border 2 /tmp/image.png
+
+# rounded corners
+convert /tmp/image.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,0 0,0 fill white circle 0,0 0,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite /tmp/image.png
+
+# shadow
+convert /tmp/image.png \( +clone -background black -shadow 45x5+0+0 \) \
++swap -background none -layers merge +repage /tmp/image.png; \
+
+# white backdrop
+convert /tmp/image.png -bordercolor white -border 2 /tmp/image.png
+
+# copy to clipboard
+xclip -selection clipboard -i /tmp/image.png -t image/png

@@ -1,10 +1,9 @@
 !! ------------------------------------------------------------------------------
 !! Font theme
 !! ------------------------------------------------------------------------------
-Xft.dpi:       105
-Xft.antialias: true
-Xft.hinting:   true
+Xft.antialias: 1
+Xft.hinting:   1
 Xft.rgba:      rgb
-Xft.autohint:  false
-Xft.hintstyle: hintslight
+Xft.autohint:  1
+Xft.hintstyle: slight
 Xft.lcdfilter: lcddefault

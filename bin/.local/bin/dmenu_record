@@ -1,0 +1,107 @@
+#!/bin/sh
+
+# Usage:
+# `record`: Ask for recording type via dmenu
+# `record screencast`: Record both audio and screen
+# `record video`: Record only screen
+# `record audio`: Record only audio
+#
+# If there is already a running instance, user will be prompted to end it.
+
+DMENU="rofi -width 45 -dmenu -i"
+
+updateicon() { \
+  echo "$1" > ~/.recordingicon
+}
+
+killrecording() {
+  recpid="$(cat ~/.recordingpid)"
+  # kill with SIGTERM, allowing finishing touches.
+  kill -15 "$recpid"
+  rm -f ~/.recordingpid
+  updateicon ""
+  exit
+}
+
+screencasthd() { \
+  ffmpeg -y \
+  -f x11grab \
+  -draw_mouse 1 \
+  -framerate 30 \
+  -s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
+  -i :0.0+0,0 \
+  -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor \
+  -c:a aac \
+  -c:v libx264rgb -crf 0 -preset ultrafast \
+  -threads 4 \
+  "$HOME/Video/screencasthd-$(date '+%y%m%d-%H%M-%S').mkv" &
+  echo $! > ~/.recordingpid
+  updateicon " REC "
+}
+
+screencast() { \
+  ffmpeg -y \
+  -f x11grab \
+  -draw_mouse 1 \
+  -framerate 30 \
+  -s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
+  -i :0.0+0,0 \
+  -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor \
+  -f pulse -i alsa_input.pci-0000_00_1b.0.analog-stereo \
+  -filter_complex amix=inputs=2 \
+  -c:a aac \
+  -c:v libx264 -pix_fmt yuv420p -qp 18 -q:v 1 \
+  -threads 4 \
+  "$HOME/Video/screencast-$(date '+%y%m%d-%H%M-%S').mkv" &
+  echo $! > ~/.recordingpid
+  updateicon " REC "
+}
+
+video() { \
+  ffmpeg \
+  -f x11grab \
+  -draw_mouse 1 \
+  -framerate 30 \
+  -s $(xdpyinfo | grep dimensions | awk '{print $2;}') \
+  -i :0.0+0,0 \
+  -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor \
+  -c:a aac \
+  -c:v libx264 -pix_fmt yuv420p -preset veryfast -q:v 1 \
+  -threads 4 \
+  "$HOME/Video/video-$(date '+%y%m%d-%H%M-%S').mp4" &
+  echo $! > ~/.recordingpid
+  updateicon " REC "
+}
+
+audio() { \
+  ffmpeg \
+  -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor \
+  -c:a flac \
+  "$HOME/Video/audio-$(date '+%y%m%d-%H%M-%S').flac" &
+  echo $! > ~/.recordingpid
+  updateicon " REC "
+}
+
+askrecording() { \
+  [ -f ~/.recordingpid ] && asktoend && exit
+  choice=$(printf "screencasthd\\nscreencast\\nvideo\\naudio" | $DMENU -l 4 -p "Record:")
+  case "$choice" in
+    screencasthd) screencasthd;;
+    screencast) screencast;;
+    video) video;;
+    audio) audio;;
+  esac
+}
+
+asktoend() { \
+  response=$(printf "no\\nyes" | $DMENU -l 2 -p "End Recording:") &&
+  [ "$response" = "yes" ] &&  killrecording
+}
+
+case "$1" in
+  screencasthd) screencasthd;;
+  screencast) screencast;;
+  audio) audio;;
+  video) video;;
+  *) askrecording;;
+esac
