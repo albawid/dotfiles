@@ -193,14 +193,14 @@ workspace_auto_back_and_forth yes
 
 #
 ## Amixer audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ # increase volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- # decrease volume
-bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle # mute volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse set Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse set Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master toggle
 
 #
 ## Light Brightness Control
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 #
 ## Keybinding
@@ -260,8 +260,9 @@ exec --no-startup-id /home/albawid/.local/bin/feh_bg
 exec --no-startup-id xautolock -time 15 -locker "betterlockscreen -l dimblur"
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id lxpolkit
-exec --no-startup-id viper start
-exec_always --no-startup-id feh-blur -d
+# exec --no-startup-id viper start
+# exec --no-startup-id systemctl --user restart pulseaudio
+# exec_always --no-startup-id feh-blur -d
 exec_always killall -9 xcompmgr; xcompmgr
 
 #
